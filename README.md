@@ -1,113 +1,70 @@
-# chainlink-hackathon
-# iOwnThis (AKA Cashdapp)
+# Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), [Bootstrap](), [FontAwesome](), [Web3](), [IPFS]() and [Fleek]().
 
-## Hardhat Installation
-Go to https://hardhat.org/ for a full set of instructions
+## Available Scripts
 
-`npm install --save-dev hardhat`
+In the project directory, you can run:
 
-`npm install --global hardhat-shorthand`
+### `yarn start`
 
-From the project root directory
-`npm install`
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Compiling
-`npx hardhat compile`
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-### Hardhat Shorthand
-If you'd like to use the shorthand CLI command `hh <your hardhat command>` instead of always calling `npx hardhat <your hardhat command` you can use `npm i -g hardhat-shorthand` to install the shorthand globally
+### `yarn test`
 
-### Contracts
-This is where the smart contracts live.
-Note you can use console.log() within your smart contract using the hardhat helper! (console.sol)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Currently you can find the Greeter.sol contract as an example to wrap your head around how a smart contract looks before it is deployed 
+### `yarn build`
 
-### Accounts
-`npx hardhat accounts`
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Testing
-This runs your own blockchain in the backend using the Hardhat Runtime Environment, (you can run this separately with hardhat node).
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-`npx hardhat test`
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Config Custom Tasks/Functions
-You can define your own tasks in the hardhat.config file, you will notice a sample task I wrote to demonstrate this, as well as the hardhat default accounts task
-`task('your task name', 'description' async () => {//your function})`
+### `yarn eject`
 
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-## Environment Variables
-you'll need to make sure you fund this wallet with both Kovan ETH and Kovan LINK using the faucets here
-KOVAN ETH: https://faucet.kovan.network/
-KOVAN LINK: https://kovan.chain.link/
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-`export PRIVATE_KEY=<your funded private MetaMask key>`
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-`KOVAN_RPC_URL=https://kovan.infura.io/v3/075a748345714f0d87e806b2e180f237`
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Chainlink
+## Learn More
 
-### Chainlink with Hardhat 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-`cd chainlink-hardhat-box`
-`yarn install`
-`hh deploy`
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-If you want to read more... https://blog.chain.link/using-chainlink-with-hardhat/
+### Code Splitting
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
+### Analyzing the Bundle Size
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
+### Making a Progressive Web App
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-## React Front End
+### Advanced Configuration
 
-### Dependencies
-A host of development dependencies were installed:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-`axios` : for HTTP requests 🧾
-`bootstrap / react-bootstrap` : for prebuilt component hierarchies 📦
-`node-sass` : for increased css functionality 💄
-`uuid` : for handling keys on mapped components 🆔
-`fontawesome` : pro to provide icons 🍨
-`react-router-dom` :to handle routing and urls 🌐
-`web3` : to interact with the Ethereum block chain. 💸
+### Deployment
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
+### `yarn build` fails to minify
 
-### Local Deployment
-
-In Bash, clone into a local repository.
-`git clone https://github.com/BuddhistWalrus/chainlink-hackathon`
-
-Switch into the `fe` folder
-`cd chainlink-hackathon/fe`
-
-Add FontAwesome Credentials and NPM Install
-
-`npm config set "@fortawesome:registry" https://npm.fontawesome.com/`
-`npm config set "//npm.fontawesome.com/:_authToken"{MY_CREDENTIALS_HERE}`
-`npm install`
-
-Run Yarn start. your browser should spin up a page at http://localhost:3000/
-`yarn start`
-
-
-### Directory information 
-
-Directory
-Several folders and subfolders were added. The hierarchy can be described as follows.
-____src : where the UI architecure resides
-| |
-| |/assets
-| | |
-| | |/images
-| | |
-| | |/styles : worth noting is the theme.sass file, an injectable partial holding our color schema and project fonts
-| |
-| |/components : home to the jsx and html
-| | |
-| | |/common : holds reusable components
-
-
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
