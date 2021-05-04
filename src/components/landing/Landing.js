@@ -10,9 +10,9 @@ export default function Splash() {
     let timer = setTimeout(() => setIsLoading(false), 3000);
 
     return (
-        <> 
+        <div style={{backgroundColor:"black"}}> 
             <Loading isLoading={isLoading}/>
             <Hero isLoading={isLoading} />
-        </>
+        </div>
     )
 }
